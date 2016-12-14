@@ -24,5 +24,5 @@ So, I decided to create a short list of deals for winter. What I want to finish 
     6. book
     7. book
   - Read about machine learning and try to write some kind of simple system
-  - Make at least 2 pull-requests to [jcommune](https://github.com/jtalks-org/jcommune)
+  - Make at least 2 pull-requests to [jcommune](https://github.com/jtalks-org/jcommune) **[JC-2303](http://jira.jtalks.org/browse/JC-2303)** **`started`**
   - Finish [«Выразительный Javascript» of Marijn Haverbeke](https://karmazzin.gitbooks.io/eloquentjavascript_ru/content/) **`started`**
