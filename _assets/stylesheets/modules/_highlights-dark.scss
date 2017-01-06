@@ -3,7 +3,7 @@
 // =============================================================================
 
 .highlight {
-  padding: 50px;
+  padding: 30px 20px;
   margin: 0;
   margin: 30px 0;
   overflow: auto;
@@ -41,6 +41,10 @@
 
 .highlight pre {
   background-color: darken($gray-darkest, 5);
+}
+
+.highlight .lineno {
+  margin-right: 15px;
 }
 
 .highlight .hll {
