@@ -9,7 +9,7 @@ So, I decided to create a short list of deals for winter. What I want to finish 
 
 # General:
   - Read technical books (at least 5).
-    1. Боб Мартин «Чистый код» **`finished`**
+    1. Боб Мартин «Чистый код» \finished\
     2. Bruce Tate «Bitter Java» **`started`**
     3. Craig Walls "Spring in Action, Fourth Edition" **`started`**
     4. Chris Schaefer "Pro Spring, 4th edition "
@@ -22,7 +22,7 @@ So, I decided to create a short list of deals for winter. What I want to finish 
     2. Дин Делис «Парадокс страсти»
     3. Роджер Пенроуз «Новый ум короля. О компьютерах, мышлении и законах физики»
     4. Радислав Гандапас «Камасутра для оратора»
-    5. Брюс Тулган: Все начальники делают это. Пошаговое руководство по решению (почти) всех проблем менеджера. **`finished`**
+    5. Брюс Тулган: Все начальники делают это. Пошаговое руководство по решению (почти) всех проблем менеджера. \finished\
     6. book
     7. book
   - Read about machine learning and try to write some kind of simple system
