@@ -26,6 +26,12 @@
   border-radius: 1px;
 }
 
+.highlighter-rouge-green {
+  @extend .highlighter-rouge;
+  color: green;
+  font-weight: bold;
+}
+
 // Responsive
 // =============================================================================
 
