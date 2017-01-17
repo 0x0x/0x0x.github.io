@@ -1,4 +1,0 @@
----
-slug: bookoverview
-name: BookOverview
----

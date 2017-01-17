@@ -1,4 +1,0 @@
----
-slug: vagrant
-name: Vagrant
----

@@ -1,20 +1,74 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Tech literature overview</title>
+    <description></description>
+    <link>https://0x0x.github.io/</link>
+    <atom:link href="https://0x0x.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Linux file system</title>
+        <description>General structure and details about Linux file system</description>
+        <pubDate>Tue, 17 Jan 2017 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/linux-file-system</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/linux-file-system</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>How to create a Vagrant Base box</title>
+        <description>Simple instruction connected with virtual machines</description>
+        <pubDate>Thu, 05 Jan 2017 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/how-to-create-a-vagrant-base-box</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/how-to-create-a-vagrant-base-box</guid>
+      </item>
+    
+      <item>
+        <title>Craig Walls — &quot;Spring in action&quot;, 4th edition.</title>
+        <description>Main ideas of the &quot;Spring in action&quot; book</description>
+        <pubDate>Fri, 30 Dec 2016 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/spring-in-action</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/spring-in-action</guid>
+      </item>
+    
+      <item>
+        <title>&quot;Bitter Java&quot;. The main goals</title>
+        <description>Quick overview and main ideas of the &quot;Bitter Java&quot; book</description>
+        <pubDate>Thu, 01 Dec 2016 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/bitter-java</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/bitter-java</guid>
+      </item>
+    
+      <item>
+        <title>Grow plan for Winter-2016/2017</title>
+        <description>My personal grow plan for December 2016 - February 2017</description>
+        <pubDate>Mon, 28 Nov 2016 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/winter-plan</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/winter-plan</guid>
+      </item>
+    
+      <item>
+        <title>Introducing chalk</title>
+        <description>Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.</description>
+        <pubDate>Mon, 17 Oct 2016 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/introducing-chalk</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/introducing-chalk</guid>
+      </item>
+    
+      <item>
+        <title>How to configure Chalk</title>
+        <description>Learn more about the config file for Chalk and how to set it up properly.</description>
+        <pubDate>Sun, 16 Oct 2016 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/configuring-chalk</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/configuring-chalk</guid>
+      </item>
+    
+      <item>
+        <title>Chalk sample post with all elements</title>
+        <description>Have a look at all the predesigned elements you can use in Chalk.</description>
+        <pubDate>Sat, 15 Oct 2016 00:00:00 +0300</pubDate>
+        <link>https://0x0x.github.io//posts/chalk-sample-post-with-all-elements</link>
+        <guid isPermaLink="true">https://0x0x.github.io//posts/chalk-sample-post-with-all-elements</guid>
+      </item>
+    
   </channel>
 </rss>

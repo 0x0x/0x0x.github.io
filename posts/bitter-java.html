@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tech literature overview | "Bitter Java". The main goals</title>
+  <meta name="description" content="Quick overview and main ideas of the "Bitter Java" book">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content=""Bitter Java". The main goals">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://0x0x.github.io//posts/bitter-java">
+  <meta property="og:description" content="Quick overview and main ideas of the "Bitter Java" book">
+  <meta property="og:site_name" content="Tech literature overview">
+  <meta property="og:image" content="https://0x0x.github.io//assets/og-image.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://0x0x.github.io//posts/bitter-java">
+  <meta name="twitter:title" content=""Bitter Java". The main goals">
+  <meta name="twitter:description" content="Quick overview and main ideas of the "Bitter Java" book">
+  <meta name="twitter:image" content="https://0x0x.github.io//assets/og-image.jpg">
+
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link href="https://0x0x.github.io//feed.xml" type="application/rss+xml" rel="alternate" title="Tech literature overview Last 10 blog posts" />
+
+  
+    <link type="text/css" rel="stylesheet" href="/assets/light.css">
+  
+</head>
+
+<body>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/" class="header-logo" title="Tech literature overview">Tech literature overview</a>
+  <ul class="header-links">
+    
+    
+    
+      <li>
+        <a href="https://github.com/0x0x" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:andrej.programmer@gmail.com" target="_blank" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>"Bitter Java". The main goals</h1>
+            <p>Quick overview and main ideas of the "Bitter Java" book</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                December 1, 2016
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  2 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/java">java</a>
+                
+                  <a href="/tag/bookoverview">bookoverview</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <p><a href="/assets/bitterjava/bitter_java.jpg" class="fluidbox-trigger">
+  <img src="/assets/bitterjava/bitter_java.jpg" alt="Bitter Java" />
+</a></p>
+
+<p>Main ideas of book. I’ll try to make a structure with main advices.</p>
+
+<h1 id="part-1">Part 1</h1>
+
+<h3 id="before-creating-a-new-layer-the-next-points-should-be-answered">Before creating a new layer the next points should be answered</h3>
+<ol>
+  <li>What does each layer bring to the table? We should understand the value of each additional layer.</li>
+  <li>What is the <em><strong>cost</strong></em>? We need to be insistent about establishing cost</li>
+  <li>Under what circumstances are those layers likely to break? What is our <em><strong>risk</strong></em>? In essence, we want to find the traps.</li>
+  <li>What can we do to protect ourselves from the trap, and how can we extricate ourselves once we’ve fallen in?</li>
+  <li>Finally, we want to establish our <em><strong>risk mitigation</strong></em>. This is the realm of the antipattern.</li>
+</ol>
+
+<h3 id="dmz"><a href="https://en.wikipedia.org/wiki/DMZ_(computing)">DMZ</a></h3>
+<p>DMZ - demilitarized zone is a physical or logical subnetwork that contains and exposes an organization’s external-facing services to a usually larger and untrusted network, usually the Internet. The purpose of a DMZ is to add an additional layer of security to an organization’s local area network (LAN); an external network node can access only what is exposed in the DMZ, while the rest of the organization’s network is firewalled.</p>
+
+<p>DMZ network diagram with 1 firewall
+<a href="/assets/bitterjava/part01/DMZ_network_diagram_1_firewall.svg" class="fluidbox-trigger">
+  <img src="/assets/bitterjava/part01/DMZ_network_diagram_1_firewall.svg" alt="DMZ network diagram with 1 firewall" />
+</a></p>
+
+<p>DMZ network diagram with 2 firewalls
+<a href="/assets/bitterjava/part01/DMZ_network_diagram_2_firewall.svg" class="fluidbox-trigger">
+  <img src="/assets/bitterjava/part01/DMZ_network_diagram_2_firewall.svg" alt="DMZ network diagram with 2 firewalls" />
+</a></p>
+
+<h3 id="mini-antipatterns">Mini-antipatterns</h3>
+<ol>
+  <li>Too Many Web Page Items (HTTP 1/1 opens new connection for any element at page e. g. images, videos, GIFs)</li>
+  <li><strong>Excessive Layering</strong>. <br />
+Object-oriented systems are easy to layer with excessive complexity that is not required to adequately describe the relationships and behavior in the model. The complexity of the software can easily outpace the capabilities of the hardware platform.</li>
+  <li><strong>Incomplete Process Transitions</strong>. <br />
+  Analysis paralysis. New teams without complete education or experienced leadership can overanalyze solutions to the point of stagnation.
+    <ul>
+      <li>Poorly defined iterations</li>
+      <li>Poorly defined stopping points</li>
+      <li>Overmanagement of the artifact set</li>
+      <li>Poor teams or inadequate education</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="extreme-programming-principles">Extreme programming principles</h3>
+<ol>
+  <li>Choose simple solutions.</li>
+  <li>Ensure that the customers are on site.</li>
+  <li>Write user stories.</li>
+  <li>Divide larger projects into measured, planned, small releases.</li>
+  <li>Refactor early and often.</li>
+  <li>Program in pairs.</li>
+  <li>Code test cases before the rest of the system.</li>
+  <li>Do not use overtime.</li>
+</ol>
+
+<h1 id="part-2">Part 2</h1>
+
+
+          </div>
+
+          <div class="article-share">
+            
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status="Bitter Java". The main goals - https://0x0x.github.io//posts/bitter-java ', 'newwindow', 'width=500, height=225'); return false;">
+              <span class="icon icon-social-twitter"></span>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://0x0x.github.io//posts/bitter-java', 'newwindow', 'width=500, height=500'); return false;">
+              <span class="icon icon-social-facebook"></span>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=https://0x0x.github.io//posts/bitter-java', 'newwindow', 'width=550, height=400'); return false;">
+              <span class="icon icon-social-googleplus"></span>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer reveal">
+  <p>
+    Intelligence is the ability to avoid doing work, yet getting the work done.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="/assets/vendor.js"></script>
+<script type="text/javascript" src="/assets/application.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
